@@ -15,7 +15,7 @@
     CIMNetEngine * pNetEngine;
     CIMDBEngine * pDbEngine;
     
-    //123456
+    //1234
 }
 
 @property (nonatomic,retain) CIMNetEngine * pNetEngine;
