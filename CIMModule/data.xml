@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <TempTable>
+    <name>aaa</name>
+    <age>10</age>
+    <price>2.000002</price>
+  </TempTable>
+  <TempTable>
+    <name>aaa111</name>
+    <age>1011</age>
+    <price>0.33333333333333331</price>
+  </TempTable>
+</DocumentElement>

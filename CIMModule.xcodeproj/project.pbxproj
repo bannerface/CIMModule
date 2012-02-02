@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84759BD214DA698300E1D750 /* CIMNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BD114DA698300E1D750 /* CIMNetEngine.m */; };
+		84759BD614DA69A400E1D750 /* CIMDBEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BD514DA69A400E1D750 /* CIMDBEngine.m */; };
+		84759BE114DA6C9700E1D750 /* CIMNetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BDC14DA6C9700E1D750 /* CIMNetHelper.m */; };
+		84759BE214DA6C9700E1D750 /* CRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BDE14DA6C9700E1D750 /* CRC.m */; };
+		84759BEC14DA6D2D00E1D750 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BE714DA6D2D00E1D750 /* AsyncSocket.m */; };
+		84759BED14DA6D2D00E1D750 /* NetCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BEB14DA6D2D00E1D750 /* NetCmd.m */; };
+		84759BF514DA72B700E1D750 /* NSMutableTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BF414DA72B700E1D750 /* NSMutableTable.m */; };
+		84759BFF14DA72FB00E1D750 /* TableObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BF714DA72FB00E1D750 /* TableObj.m */; };
+		84759C0014DA72FB00E1D750 /* RowObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BF914DA72FB00E1D750 /* RowObj.m */; };
+		84759C0114DA72FB00E1D750 /* COperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BFB14DA72FB00E1D750 /* COperation.m */; };
+		84759C0214DA72FB00E1D750 /* TagOjb.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BFD14DA72FB00E1D750 /* TagOjb.m */; };
+		84759C0414DA738900E1D750 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84759C0314DA738900E1D750 /* CFNetwork.framework */; };
+		84759C0614DA804800E1D750 /* PlausibleDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84759C0514DA804800E1D750 /* PlausibleDatabase.framework */; };
+		84759C0814DA807000E1D750 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84759C0714DA807000E1D750 /* libsqlite3.dylib */; };
+		8488844D14DA62B300D9AE79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488844C14DA62B300D9AE79 /* UIKit.framework */; };
+		8488844F14DA62B300D9AE79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488844E14DA62B300D9AE79 /* Foundation.framework */; };
+		8488845114DA62B300D9AE79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488845014DA62B300D9AE79 /* CoreGraphics.framework */; };
+		8488845714DA62B400D9AE79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8488845514DA62B400D9AE79 /* InfoPlist.strings */; };
+		8488845914DA62B400D9AE79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488845814DA62B400D9AE79 /* main.m */; };
+		8488845D14DA62B400D9AE79 /* CIMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488845C14DA62B400D9AE79 /* CIMAppDelegate.m */; };
+		8488846014DA62B400D9AE79 /* CIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488845F14DA62B400D9AE79 /* CIMViewController.m */; };
+		8488846314DA62B400D9AE79 /* CIMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8488846114DA62B400D9AE79 /* CIMViewController_iPhone.xib */; };
+		8488846614DA62B400D9AE79 /* CIMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8488846414DA62B400D9AE79 /* CIMViewController_iPad.xib */; };
+		84EF828414DA84C900C4E253 /* CIMSaleTools.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 84EF828314DA84C900C4E253 /* CIMSaleTools.sqlite */; };
+		84EF828C14DA950700C4E253 /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84EF828A14DA950700C4E253 /* schema.xml */; };
+		84EF828D14DA950700C4E253 /* data.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84EF828B14DA950700C4E253 /* data.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84759BD014DA698300E1D750 /* CIMNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIMNetEngine.h; sourceTree = "<group>"; };
+		84759BD114DA698300E1D750 /* CIMNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIMNetEngine.m; sourceTree = "<group>"; };
+		84759BD414DA69A400E1D750 /* CIMDBEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIMDBEngine.h; sourceTree = "<group>"; };
+		84759BD514DA69A400E1D750 /* CIMDBEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIMDBEngine.m; sourceTree = "<group>"; };
+		84759BDA14DA6C9700E1D750 /* ipadProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipadProtocol.h; sourceTree = "<group>"; };
+		84759BDB14DA6C9700E1D750 /* CIMNetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIMNetHelper.h; sourceTree = "<group>"; };
+		84759BDC14DA6C9700E1D750 /* CIMNetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIMNetHelper.m; sourceTree = "<group>"; };
+		84759BDD14DA6C9700E1D750 /* CRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRC.h; sourceTree = "<group>"; };
+		84759BDE14DA6C9700E1D750 /* CRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRC.m; sourceTree = "<group>"; };
+		84759BDF14DA6C9700E1D750 /* CIMBaseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIMBaseType.h; sourceTree = "<group>"; };
+		84759BE514DA6D2D00E1D750 /* CIMNetCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIMNetCommand.h; sourceTree = "<group>"; };
+		84759BE614DA6D2D00E1D750 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		84759BE714DA6D2D00E1D750 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		84759BE814DA6D2D00E1D750 /* NetCIMProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetCIMProtocol.h; sourceTree = "<group>"; };
+		84759BE914DA6D2D00E1D750 /* NetCIMCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetCIMCmd.h; sourceTree = "<group>"; };
+		84759BEA14DA6D2D00E1D750 /* NetCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetCmd.h; sourceTree = "<group>"; };
+		84759BEB14DA6D2D00E1D750 /* NetCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetCmd.m; sourceTree = "<group>"; };
+		84759BF314DA72B700E1D750 /* NSMutableTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableTable.h; sourceTree = "<group>"; };
+		84759BF414DA72B700E1D750 /* NSMutableTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableTable.m; sourceTree = "<group>"; };
+		84759BF614DA72FB00E1D750 /* TableObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableObj.h; sourceTree = "<group>"; };
+		84759BF714DA72FB00E1D750 /* TableObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableObj.m; sourceTree = "<group>"; };
+		84759BF814DA72FB00E1D750 /* RowObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowObj.h; sourceTree = "<group>"; };
+		84759BF914DA72FB00E1D750 /* RowObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowObj.m; sourceTree = "<group>"; };
+		84759BFA14DA72FB00E1D750 /* COperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COperation.h; sourceTree = "<group>"; };
+		84759BFB14DA72FB00E1D750 /* COperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COperation.m; sourceTree = "<group>"; };
+		84759BFC14DA72FB00E1D750 /* TagOjb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagOjb.h; sourceTree = "<group>"; };
+		84759BFD14DA72FB00E1D750 /* TagOjb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagOjb.m; sourceTree = "<group>"; };
+		84759BFE14DA72FB00E1D750 /* TagProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagProtocol.h; sourceTree = "<group>"; };
+		84759C0314DA738900E1D750 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84759C0514DA804800E1D750 /* PlausibleDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlausibleDatabase.framework; sourceTree = "<group>"; };
+		84759C0714DA807000E1D750 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8488844814DA62B300D9AE79 /* CIMModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIMModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8488844C14DA62B300D9AE79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8488844E14DA62B300D9AE79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8488845014DA62B300D9AE79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8488845414DA62B400D9AE79 /* CIMModule-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CIMModule-Info.plist"; sourceTree = "<group>"; };
+		8488845614DA62B400D9AE79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8488845814DA62B400D9AE79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8488845A14DA62B400D9AE79 /* CIMModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CIMModule-Prefix.pch"; sourceTree = "<group>"; };
+		8488845B14DA62B400D9AE79 /* CIMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIMAppDelegate.h; sourceTree = "<group>"; };
+		8488845C14DA62B400D9AE79 /* CIMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIMAppDelegate.m; sourceTree = "<group>"; };
+		8488845E14DA62B400D9AE79 /* CIMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIMViewController.h; sourceTree = "<group>"; };
+		8488845F14DA62B400D9AE79 /* CIMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIMViewController.m; sourceTree = "<group>"; };
+		8488846214DA62B400D9AE79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIMViewController_iPhone.xib; sourceTree = "<group>"; };
+		8488846514DA62B400D9AE79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIMViewController_iPad.xib; sourceTree = "<group>"; };
+		84EF828314DA84C900C4E253 /* CIMSaleTools.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CIMSaleTools.sqlite; sourceTree = "<group>"; };
+		84EF828A14DA950700C4E253 /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
+		84EF828B14DA950700C4E253 /* data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = data.xml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8488844514DA62B300D9AE79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84759C0814DA807000E1D750 /* libsqlite3.dylib in Frameworks */,
+				84759C0414DA738900E1D750 /* CFNetwork.framework in Frameworks */,
+				8488844D14DA62B300D9AE79 /* UIKit.framework in Frameworks */,
+				8488844F14DA62B300D9AE79 /* Foundation.framework in Frameworks */,
+				8488845114DA62B300D9AE79 /* CoreGraphics.framework in Frameworks */,
+				84759C0614DA804800E1D750 /* PlausibleDatabase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84759BD714DA6C8100E1D750 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84759BDA14DA6C9700E1D750 /* ipadProtocol.h */,
+				84759BDB14DA6C9700E1D750 /* CIMNetHelper.h */,
+				84759BDC14DA6C9700E1D750 /* CIMNetHelper.m */,
+				84759BDD14DA6C9700E1D750 /* CRC.h */,
+				84759BDE14DA6C9700E1D750 /* CRC.m */,
+				84759BDF14DA6C9700E1D750 /* CIMBaseType.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		84759BE314DA6CAF00E1D750 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				84759BD014DA698300E1D750 /* CIMNetEngine.h */,
+				84759BD114DA698300E1D750 /* CIMNetEngine.m */,
+				84759BD414DA69A400E1D750 /* CIMDBEngine.h */,
+				84759BD514DA69A400E1D750 /* CIMDBEngine.m */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		84759BE414DA6D1000E1D750 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84759BE514DA6D2D00E1D750 /* CIMNetCommand.h */,
+				84759BE614DA6D2D00E1D750 /* AsyncSocket.h */,
+				84759BE714DA6D2D00E1D750 /* AsyncSocket.m */,
+				84759BE814DA6D2D00E1D750 /* NetCIMProtocol.h */,
+				84759BE914DA6D2D00E1D750 /* NetCIMCmd.h */,
+				84759BEA14DA6D2D00E1D750 /* NetCmd.h */,
+				84759BEB14DA6D2D00E1D750 /* NetCmd.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		84759BF214DA721D00E1D750 /* TagProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				84759BF314DA72B700E1D750 /* NSMutableTable.h */,
+				84759BF414DA72B700E1D750 /* NSMutableTable.m */,
+				84759BF614DA72FB00E1D750 /* TableObj.h */,
+				84759BF714DA72FB00E1D750 /* TableObj.m */,
+				84759BF814DA72FB00E1D750 /* RowObj.h */,
+				84759BF914DA72FB00E1D750 /* RowObj.m */,
+				84759BFA14DA72FB00E1D750 /* COperation.h */,
+				84759BFB14DA72FB00E1D750 /* COperation.m */,
+				84759BFC14DA72FB00E1D750 /* TagOjb.h */,
+				84759BFD14DA72FB00E1D750 /* TagOjb.m */,
+				84759BFE14DA72FB00E1D750 /* TagProtocol.h */,
+			);
+			name = TagProtocol;
+			sourceTree = "<group>";
+		};
+		8488843D14DA62B300D9AE79 = {
+			isa = PBXGroup;
+			children = (
+				8488845214DA62B400D9AE79 /* CIMModule */,
+				8488844B14DA62B300D9AE79 /* Frameworks */,
+				8488844914DA62B300D9AE79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8488844914DA62B300D9AE79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8488844814DA62B300D9AE79 /* CIMModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8488844B14DA62B300D9AE79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84759C0714DA807000E1D750 /* libsqlite3.dylib */,
+				84759C0314DA738900E1D750 /* CFNetwork.framework */,
+				84759C0514DA804800E1D750 /* PlausibleDatabase.framework */,
+				8488844C14DA62B300D9AE79 /* UIKit.framework */,
+				8488844E14DA62B300D9AE79 /* Foundation.framework */,
+				8488845014DA62B300D9AE79 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8488845214DA62B400D9AE79 /* CIMModule */ = {
+			isa = PBXGroup;
+			children = (
+				8488845B14DA62B400D9AE79 /* CIMAppDelegate.h */,
+				8488845C14DA62B400D9AE79 /* CIMAppDelegate.m */,
+				8488845E14DA62B400D9AE79 /* CIMViewController.h */,
+				8488845F14DA62B400D9AE79 /* CIMViewController.m */,
+				8488846114DA62B400D9AE79 /* CIMViewController_iPhone.xib */,
+				8488846414DA62B400D9AE79 /* CIMViewController_iPad.xib */,
+				84759BF214DA721D00E1D750 /* TagProtocol */,
+				84759BD714DA6C8100E1D750 /* Common */,
+				84759BE414DA6D1000E1D750 /* Network */,
+				84759BE314DA6CAF00E1D750 /* Module */,
+				8488845314DA62B400D9AE79 /* Supporting Files */,
+			);
+			path = CIMModule;
+			sourceTree = "<group>";
+		};
+		8488845314DA62B400D9AE79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84EF828A14DA950700C4E253 /* schema.xml */,
+				84EF828B14DA950700C4E253 /* data.xml */,
+				84EF828314DA84C900C4E253 /* CIMSaleTools.sqlite */,
+				8488845414DA62B400D9AE79 /* CIMModule-Info.plist */,
+				8488845514DA62B400D9AE79 /* InfoPlist.strings */,
+				8488845814DA62B400D9AE79 /* main.m */,
+				8488845A14DA62B400D9AE79 /* CIMModule-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8488844714DA62B300D9AE79 /* CIMModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8488846914DA62B400D9AE79 /* Build configuration list for PBXNativeTarget "CIMModule" */;
+			buildPhases = (
+				8488844414DA62B300D9AE79 /* Sources */,
+				8488844514DA62B300D9AE79 /* Frameworks */,
+				8488844614DA62B300D9AE79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CIMModule;
+			productName = CIMModule;
+			productReference = 8488844814DA62B300D9AE79 /* CIMModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8488843F14DA62B300D9AE79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 8488844214DA62B300D9AE79 /* Build configuration list for PBXProject "CIMModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8488843D14DA62B300D9AE79;
+			productRefGroup = 8488844914DA62B300D9AE79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8488844714DA62B300D9AE79 /* CIMModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8488844614DA62B300D9AE79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8488845714DA62B400D9AE79 /* InfoPlist.strings in Resources */,
+				8488846314DA62B400D9AE79 /* CIMViewController_iPhone.xib in Resources */,
+				8488846614DA62B400D9AE79 /* CIMViewController_iPad.xib in Resources */,
+				84EF828414DA84C900C4E253 /* CIMSaleTools.sqlite in Resources */,
+				84EF828C14DA950700C4E253 /* schema.xml in Resources */,
+				84EF828D14DA950700C4E253 /* data.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8488844414DA62B300D9AE79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8488845914DA62B400D9AE79 /* main.m in Sources */,
+				8488845D14DA62B400D9AE79 /* CIMAppDelegate.m in Sources */,
+				8488846014DA62B400D9AE79 /* CIMViewController.m in Sources */,
+				84759BD214DA698300E1D750 /* CIMNetEngine.m in Sources */,
+				84759BD614DA69A400E1D750 /* CIMDBEngine.m in Sources */,
+				84759BE114DA6C9700E1D750 /* CIMNetHelper.m in Sources */,
+				84759BE214DA6C9700E1D750 /* CRC.m in Sources */,
+				84759BEC14DA6D2D00E1D750 /* AsyncSocket.m in Sources */,
+				84759BED14DA6D2D00E1D750 /* NetCmd.m in Sources */,
+				84759BF514DA72B700E1D750 /* NSMutableTable.m in Sources */,
+				84759BFF14DA72FB00E1D750 /* TableObj.m in Sources */,
+				84759C0014DA72FB00E1D750 /* RowObj.m in Sources */,
+				84759C0114DA72FB00E1D750 /* COperation.m in Sources */,
+				84759C0214DA72FB00E1D750 /* TagOjb.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8488845514DA62B400D9AE79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8488845614DA62B400D9AE79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8488846114DA62B400D9AE79 /* CIMViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8488846214DA62B400D9AE79 /* en */,
+			);
+			name = CIMViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		8488846414DA62B400D9AE79 /* CIMViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8488846514DA62B400D9AE79 /* en */,
+			);
+			name = CIMViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8488846714DA62B400D9AE79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8488846814DA62B400D9AE79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8488846A14DA62B400D9AE79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CIMModule/CIMModule-Prefix.pch";
+				INFOPLIST_FILE = "CIMModule/CIMModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8488846B14DA62B400D9AE79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CIMModule/CIMModule-Prefix.pch";
+				INFOPLIST_FILE = "CIMModule/CIMModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8488844214DA62B300D9AE79 /* Build configuration list for PBXProject "CIMModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8488846714DA62B400D9AE79 /* Debug */,
+				8488846814DA62B400D9AE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8488846914DA62B400D9AE79 /* Build configuration list for PBXNativeTarget "CIMModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8488846A14DA62B400D9AE79 /* Debug */,
+				8488846B14DA62B400D9AE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8488843F14DA62B300D9AE79 /* Project object */;
+}
