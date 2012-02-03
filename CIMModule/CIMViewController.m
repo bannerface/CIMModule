@@ -24,7 +24,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"CIMSaleTools" ofType:@"sqlite"];
+    
+    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+	NSString *sourcePath = [documentPath stringByAppendingPathComponent:@"product.sqlite"];
+    
+    //NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"sqlite"];
     pDbEngine = [[CIMDBEngine alloc] initWithFileName:sourcePath];
     pNetEngine = [[CIMNetEngine alloc] init];
     pNetEngine.dbDelegate = pDbEngine;

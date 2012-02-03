@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7869B77114DBB43300272A20 /* db.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7869B77014DBB43300272A20 /* db.xml */; };
 		84759BD214DA698300E1D750 /* CIMNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BD114DA698300E1D750 /* CIMNetEngine.m */; };
 		84759BD614DA69A400E1D750 /* CIMDBEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BD514DA69A400E1D750 /* CIMDBEngine.m */; };
 		84759BE114DA6C9700E1D750 /* CIMNetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BDC14DA6C9700E1D750 /* CIMNetHelper.m */; };
@@ -30,12 +31,10 @@
 		8488846014DA62B400D9AE79 /* CIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488845F14DA62B400D9AE79 /* CIMViewController.m */; };
 		8488846314DA62B400D9AE79 /* CIMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8488846114DA62B400D9AE79 /* CIMViewController_iPhone.xib */; };
 		8488846614DA62B400D9AE79 /* CIMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8488846414DA62B400D9AE79 /* CIMViewController_iPad.xib */; };
-		84EF828414DA84C900C4E253 /* CIMSaleTools.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 84EF828314DA84C900C4E253 /* CIMSaleTools.sqlite */; };
-		84EF828C14DA950700C4E253 /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84EF828A14DA950700C4E253 /* schema.xml */; };
-		84EF828D14DA950700C4E253 /* data.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84EF828B14DA950700C4E253 /* data.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7869B77014DBB43300272A20 /* db.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = db.xml; sourceTree = "<group>"; };
 		84759BD014DA698300E1D750 /* CIMNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIMNetEngine.h; sourceTree = "<group>"; };
 		84759BD114DA698300E1D750 /* CIMNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIMNetEngine.m; sourceTree = "<group>"; };
 		84759BD414DA69A400E1D750 /* CIMDBEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIMDBEngine.h; sourceTree = "<group>"; };
@@ -81,9 +80,6 @@
 		8488845F14DA62B400D9AE79 /* CIMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIMViewController.m; sourceTree = "<group>"; };
 		8488846214DA62B400D9AE79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIMViewController_iPhone.xib; sourceTree = "<group>"; };
 		8488846514DA62B400D9AE79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIMViewController_iPad.xib; sourceTree = "<group>"; };
-		84EF828314DA84C900C4E253 /* CIMSaleTools.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CIMSaleTools.sqlite; sourceTree = "<group>"; };
-		84EF828A14DA950700C4E253 /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
-		84EF828B14DA950700C4E253 /* data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = data.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,9 +206,7 @@
 		8488845314DA62B400D9AE79 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				84EF828A14DA950700C4E253 /* schema.xml */,
-				84EF828B14DA950700C4E253 /* data.xml */,
-				84EF828314DA84C900C4E253 /* CIMSaleTools.sqlite */,
+				7869B77014DBB43300272A20 /* db.xml */,
 				8488845414DA62B400D9AE79 /* CIMModule-Info.plist */,
 				8488845514DA62B400D9AE79 /* InfoPlist.strings */,
 				8488845814DA62B400D9AE79 /* main.m */,
@@ -274,9 +268,7 @@
 				8488845714DA62B400D9AE79 /* InfoPlist.strings in Resources */,
 				8488846314DA62B400D9AE79 /* CIMViewController_iPhone.xib in Resources */,
 				8488846614DA62B400D9AE79 /* CIMViewController_iPad.xib in Resources */,
-				84EF828414DA84C900C4E253 /* CIMSaleTools.sqlite in Resources */,
-				84EF828C14DA950700C4E253 /* schema.xml in Resources */,
-				84EF828D14DA950700C4E253 /* data.xml in Resources */,
+				7869B77114DBB43300272A20 /* db.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

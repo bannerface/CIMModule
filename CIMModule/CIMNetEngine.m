@@ -28,12 +28,12 @@
 
 - (long)GetOfflineData:(GUID *)guidCompany Selector:(SEL)method withObject:(id)selRecv
 {
-    NSString * strXMLSchema = [[NSBundle mainBundle] pathForResource:@"schema.xml" ofType:nil];
+    NSString * strXMLSchema = [[NSBundle mainBundle] pathForResource:@"db.xml" ofType:nil];
     NSFileHandle *file = [NSFileHandle fileHandleForReadingAtPath:strXMLSchema];
     NSData *data1 = [file readDataToEndOfFile];
     [file closeFile];
     
-    [dbDelegate InitTableByXML:data1];
+    [dbDelegate CreateTableByXML:data1];
     return 0;
 }
 
