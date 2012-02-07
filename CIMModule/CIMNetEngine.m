@@ -99,7 +99,7 @@
 	NSLog(@"3 DONE. Received Bytes: %d", [webData length]);
 	NSString *theXML = [[NSString alloc] initWithBytes: [webData bytes] length:[webData length] encoding:NSUTF8StringEncoding];
 //    theXML = [theXML stringByReplacingOccurrencesOfString:@"%" withString:@"%%"]; 
-	NSLog(theXML);
+	NSLog(@"%@", theXML);
 	[theXML release];
 	
 	//重新加載xmlParser
@@ -152,7 +152,7 @@
         
         [dbDelegate CreateTableByXML:[soapResults dataUsingEncoding:NSUTF8StringEncoding]];
         
-        NSLog(strResult);
+        NSLog(@"%@", strResult);
        // [strResult release];
         
 		//[soapResults release];
