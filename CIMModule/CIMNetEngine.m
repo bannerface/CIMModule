@@ -21,7 +21,7 @@
     return 0;
 }
 
-
+// gj test
 - (long) Logout
 {
     return 0;
