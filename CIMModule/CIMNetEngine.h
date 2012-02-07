@@ -19,9 +19,14 @@ enum CIMNetEngineSyncRetError
     SyncErrorHasNotLogin,               //尚未登陆
 };
 
-@interface CIMNetEngine : NSObject
+@interface CIMNetEngine : NSObject<NSXMLParserDelegate>
 {
     id<CIMDBTaskDelgate> dbDelegate;     
+    
+    NSMutableData *webData;
+	NSMutableString *soapResults;
+	NSXMLParser *xmlParser;
+	BOOL recordResults;
 }
 
 @property (assign,nonatomic) id<CIMDBTaskDelgate> dbDelegate;

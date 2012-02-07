@@ -39,6 +39,7 @@ typedef enum
    FieldType_string,
    FieldType_int,
    FieldType_double,
+   FieldType_DateTime,
 }FieldType;
 
 @interface CIMFieldElement : NSObject {

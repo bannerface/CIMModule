@@ -79,6 +79,10 @@
                 if ([strType isEqualToString:@"xs:double"]) {
                     element.type = FieldType_double;
                 }
+                if ([strType isEqualToString:@"xs:dateTime"]) {
+                    element.type = FieldType_DateTime;
+                }
+                
                 [arFields addObject:element];
                 
                 procCreateTable = CreateTable_ParseFieldBegin;
@@ -168,6 +172,9 @@
                 case FieldType_int:
                     strCmd = [strCmd stringByAppendingString:@" INT"];
                     break;
+                case FieldType_DateTime:
+                    strCmd = [strCmd stringByAppendingString:@" DATETIME"];
+                    break;
             }
             
             if (n != (arFields.count - 1)) {
@@ -193,20 +200,32 @@
         procCreateTable = CreateTable_ParseDataEnd;
         
         NSString * strCmd = [NSString stringWithFormat:@"INSERT INTO %@",strTableName];
-        NSString * strFieleds = nil;
-        NSString * strValues = nil;
+        NSString * strFieleds = @"";
+        NSString * strValues = @"";
         
         for (int n = 0; n < arFields.count; n ++) {
             CIMFieldElement * element = [arFields objectAtIndex:n];
             if (element.string) {
-                if (strFieleds == nil) {
-                    strFieleds = element.name;
-                    strValues = [NSString stringWithFormat:@"\"%@\"",element.string];
+                NSString * strElement = nil;
+                
+                switch (element.type) {
+                    case FieldType_DateTime:
+                        strElement = [element.string substringWithRange:NSMakeRange(0,19)];
+                        strElement = [strElement stringByReplacingOccurrencesOfString:@"T" withString:@" "];
+                        break;
+                    default:
+                        strElement = element.string;
+                        break;
+                }
+                
+                if (strFieleds.length == 0) {
+                    strFieleds = [strFieleds stringByAppendingFormat:@"[%@]",element.name];
+                    strValues = [NSString stringWithFormat:@"\"%@\"",strElement];
                 }
                 else
                 {
-                    strFieleds = [strFieleds stringByAppendingFormat:@",%@",element.name];
-                    strValues = [strValues stringByAppendingFormat:@",\"%@\"",element.string];
+                    strFieleds = [strFieleds stringByAppendingFormat:@",[%@]",element.name];
+                    strValues = [strValues stringByAppendingFormat:@",\"%@\"",strElement];
                 }
             }
         }
@@ -230,6 +249,7 @@
         
         NSXMLParser * xmlPaser = [[NSXMLParser alloc] initWithData:xmlData];
         if (xmlPaser) {
+            
             [xmlPaser setDelegate:self];
             [xmlPaser parse];
             bRet = YES;

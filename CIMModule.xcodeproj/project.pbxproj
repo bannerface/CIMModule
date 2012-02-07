@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B718F114E1001700754782 /* 1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04B718F014E1001700754782 /* 1.xml */; };
 		7869B77114DBB43300272A20 /* db.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7869B77014DBB43300272A20 /* db.xml */; };
 		84759BD214DA698300E1D750 /* CIMNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BD114DA698300E1D750 /* CIMNetEngine.m */; };
 		84759BD614DA69A400E1D750 /* CIMDBEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84759BD514DA69A400E1D750 /* CIMDBEngine.m */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04B718F014E1001700754782 /* 1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1.xml; sourceTree = "<group>"; };
 		7869B77014DBB43300272A20 /* db.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = db.xml; sourceTree = "<group>"; };
 		84759BD014DA698300E1D750 /* CIMNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIMNetEngine.h; sourceTree = "<group>"; };
 		84759BD114DA698300E1D750 /* CIMNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIMNetEngine.m; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				7869B77014DBB43300272A20 /* db.xml */,
 				8488845414DA62B400D9AE79 /* CIMModule-Info.plist */,
 				8488845514DA62B400D9AE79 /* InfoPlist.strings */,
+				04B718F014E1001700754782 /* 1.xml */,
 				8488845814DA62B400D9AE79 /* main.m */,
 				8488845A14DA62B400D9AE79 /* CIMModule-Prefix.pch */,
 			);
@@ -269,6 +272,7 @@
 				8488846314DA62B400D9AE79 /* CIMViewController_iPhone.xib in Resources */,
 				8488846614DA62B400D9AE79 /* CIMViewController_iPad.xib in Resources */,
 				7869B77114DBB43300272A20 /* db.xml in Resources */,
+				04B718F114E1001700754782 /* 1.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
