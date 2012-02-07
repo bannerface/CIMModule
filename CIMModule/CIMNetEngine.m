@@ -21,6 +21,7 @@
     return 0;
 }
 
+
 - (long) Logout
 {
     return 0;
@@ -28,13 +29,14 @@
 
 - (long)GetOfflineData:(GUID *)guidCompany Selector:(SEL)method withObject:(id)selRecv
 {
-    NSString * strXMLSchema = [[NSBundle mainBundle] pathForResource:@"db.xml" ofType:nil];
-    NSFileHandle *file = [NSFileHandle fileHandleForReadingAtPath:strXMLSchema];
-    NSData *data1 = [file readDataToEndOfFile];
-    [file closeFile];
     
-    [dbDelegate CreateTableByXML:data1];
-    return 0;
+//    NSString * strXMLSchema = [[NSBundle mainBundle] pathForResource:@"db.xml" ofType:nil];
+//    NSFileHandle *file = [NSFileHandle fileHandleForReadingAtPath:strXMLSchema];
+//    NSData *data1 = [file readDataToEndOfFile];
+//    [file closeFile];
+//    
+//    [dbDelegate CreateTableByXML:data1];
+//    return 0;
 }
 
 @end
